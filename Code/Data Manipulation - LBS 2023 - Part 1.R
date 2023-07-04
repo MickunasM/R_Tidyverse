@@ -73,6 +73,7 @@ flights %>%
 
 # What was the longest arr delay?
 flights %>% 
+  filter(year == "2013")
   arrange(desc(arr_delay))
 
 # We can also ask more specific questions, such as what was the average arr_delay for UA carrier?
